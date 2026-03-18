@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.ref_type == 'branch'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - uses: ./
         id: variables-output
         with:
